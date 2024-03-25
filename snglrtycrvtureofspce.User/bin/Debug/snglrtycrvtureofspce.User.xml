@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>snglrtycrvtureofspce.User</name>
+    </assembly>
+    <members>
+        <member name="M:snglrtycrvtureofspce.User.Controllers.UsersController.AuthenticateUser(snglrtycrvtureofspce.User.Handlers.UsersController.AuthenticateUser.AuthenticateUserRequest)">
+            <summary>
+            The method provider possibility to authenticate a user by email and password
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:snglrtycrvtureofspce.User.Controllers.UsersController.RegisterUser(snglrtycrvtureofspce.User.Handlers.UsersController.RegisterUser.RegisterUserRequest)">
+            <summary>
+            The method provider possibility to register a user
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:snglrtycrvtureofspce.User.Controllers.UsersController.RefreshToken(snglrtycrvtureofspce.User.Handlers.UsersController.RefreshToken.RefreshTokenRequest)">
+            <summary>
+            The method provider possibility to refresh a token by access token and refresh token
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:snglrtycrvtureofspce.User.Controllers.UsersController.RevokeUser(snglrtycrvtureofspce.User.Handlers.UsersController.RevokeUser.RevokeUserRequest)">
+            <summary>
+            The method provider possibility to revoke a user by bearer token
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:snglrtycrvtureofspce.User.Controllers.UsersController.RevokeAllUsers">
+            <summary>
+            The method provider possibility to revoke all by bearer token
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:snglrtycrvtureofspce.User.Filters.SwaggerDefaultValues">
+            <summary>
+            Represents the OpenAPI/Swashbuckle operation filter used to document information provided, but not used.
+            </summary>
+            <remarks>This <see cref="T:Swashbuckle.AspNetCore.SwaggerGen.IOperationFilter"/> is only required due to bugs in the <see cref="T:Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator"/>.
+            Once they are fixed and published, this class can be removed.</remarks>
+        </member>
+        <member name="M:snglrtycrvtureofspce.User.Filters.SwaggerDefaultValues.Apply(Microsoft.OpenApi.Models.OpenApiOperation,Swashbuckle.AspNetCore.SwaggerGen.OperationFilterContext)">
+            <inheritdoc />
+        </member>
+        <member name="T:snglrtycrvtureofspce.User.Migrations.Initial">
+            <inheritdoc />
+        </member>
+        <member name="M:snglrtycrvtureofspce.User.Migrations.Initial.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:snglrtycrvtureofspce.User.Migrations.Initial.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:snglrtycrvtureofspce.User.Migrations.Initial.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:snglrtycrvtureofspce.User.Models.Identity.AuthResponse">
+            <summary>
+            Standard authentication response of Create, Update, Get single operation
+            </summary>
+        </member>
+        <member name="P:snglrtycrvtureofspce.User.Models.Identity.AuthResponse.Username">
+            <summary>Username</summary>
+        </member>
+        <member name="P:snglrtycrvtureofspce.User.Models.Identity.AuthResponse.Email">
+            <summary>Email</summary>
+        </member>
+        <member name="P:snglrtycrvtureofspce.User.Models.Identity.AuthResponse.Token">
+            <summary>Token</summary>
+        </member>
+        <member name="P:snglrtycrvtureofspce.User.Models.Identity.AuthResponse.RefreshToken">
+            <summary>Refresh token</summary>
+        </member>
+    </members>
+</doc>

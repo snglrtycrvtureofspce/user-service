@@ -1,0 +1,56 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <InvariantGlobalization>true</InvariantGlobalization>
+        <Title>snglrtycrvtureofspce.User</Title>
+        <Authors>snglrtycrvtureofspce</Authors>
+        <PackageLicenseUrl>https://github.com/snglrtycrvtureofspce/user-service/blob/main/LICENSE</PackageLicenseUrl>
+        <RepositoryUrl>https://github.com/snglrtycrvtureofspce/user-service</RepositoryUrl>
+        <Company>snglrtycrvtureofspce</Company>
+        <RuntimeIdentifiers>linux-x64</RuntimeIdentifiers>
+        <EnableSdkContainerDebugging>True</EnableSdkContainerDebugging>
+        <UserSecretsId>df72eb75-ccfd-468a-81df-7ad27a8ee08a</UserSecretsId>
+        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+      <DocumentationFile>bin\Debug\snglrtycrvtureofspce.User.xml</DocumentationFile>
+      <NoWarn>1701;1702;1591;8632</NoWarn>
+      <WarningLevel>8</WarningLevel>
+      <WarningsAsErrors>;NU1605;SYSLIB0011</WarningsAsErrors>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="AutoMapper" Version="13.0.1" />
+        <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" />
+        <PackageReference Include="MediatR" Version="12.2.0" />
+        <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.0" />
+        <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.0" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.1" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.0">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="8.0.0" />
+        <PackageReference Include="Microsoft.IdentityModel.JsonWebTokens" Version="7.3.1" />
+        <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="7.3.1" />
+        <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.19.6" />
+        <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.0" />
+        <PackageReference Include="Serilog.AspNetCore" Version="8.0.0" />
+        <PackageReference Include="snglrtycrvtureofspce.Core" Version="1.0.8" />
+        <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.5.0" />
+        <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.5.0" />
+        <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="6.5.0" />
+        <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="7.3.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ContainerEnvironmentVariable Include="ASPNETCORE_HTTPS_PORTS">
+        <Value>8081</Value>
+      </ContainerEnvironmentVariable>
+    </ItemGroup>
+    
+</Project>
